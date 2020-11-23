@@ -90,11 +90,29 @@ we see this programme is very dangerous.
 like jigsaw our malware is write in .NET   
 
 there are several tools avalaible for decompile .NET program  
-i wil use DotPeek on Windows :   
-![](https://github.com/PierreAdams/Evil/blob/main/evil4.png)
+i wil use DotPeek on Windows :     
+
+![](https://github.com/PierreAdams/Evil/blob/main/evil4.PNG)     
+Import exec file :     
+
+![](https://github.com/PierreAdams/Evil/blob/main/evil5.PNG)
+
+now we can see the source code of this executable:   
+![](https://github.com/PierreAdams/Evil/blob/main/evil6.PNG)
+
+with code source we can see the algorithm use : 
+AES   
+
+in this case 2 things interest us : 
+ - Password Encryption 
+ - Initialization Vector 
+ we find this information in the source code:   
+![](https://github.com/PierreAdams/Evil/blob/main/evil7.PNG)
+![](https://github.com/PierreAdams/Evil/blob/main/evil8.PNG)
 
 
-
-
-
+``` 
+echo "RXZpbERlZmF1bHRQYXNzIQ==" | base64 -d 
+EvilDefaultPass!
+```
 
