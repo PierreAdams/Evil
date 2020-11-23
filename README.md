@@ -74,7 +74,7 @@ we can see :
 <img src="https://github.com/PierreAdams/Evil/blob/main/evil2.png" width="600" />
 
 Now it's time to analyse : "drpbx.exe"
-drpbx.exe and firefox.exe are are often source of this ransomware
+drpbx.exe and firefox.exe are  often source of this ransomware
 ```
 $ volatility -f dump.vmem --profile=Win7SP1x64 pslist
 .....................
