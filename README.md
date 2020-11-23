@@ -53,7 +53,7 @@ Volatility Foundation Volatility Framework 2.6.1
 ```
 After some research about ".evil" extention   
 
-we can find evil is FrenchRansomware based on jigsaw : with this text : 
+we can find evil is French Ransomware based on jigsaw : with this text : 
 >Que les choses soient bien claires, nous ne tolérons aucune entrave à notre plan
 Votre action de résistance est vaine et dénuée de sens
 Nous vous détruirons sans pitié, vous et vos idées révolutionnaires,
@@ -62,6 +62,10 @@ Vos preuves ont été chiffrées et sont désormais inaccessibles mouhahahaha,
 Vous pouvez toujours essayer de payer la rançon, vous ne retrouverez rien
 Envoyez EvilCoins ici:
 
-
 ![](https://github.com/PierreAdams/Evil/blob/main/evil.png)
+```
+$ volatility -f dump.vmem --profile=Win7SP1x64 screenshot --dump-dir .
+$ ristretto session_1.WinSta0.Default.png 
+```
+
 
