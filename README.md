@@ -37,8 +37,9 @@ Some example : [Volatility Cheat Sheet](https://digital-forensics.sans.org/media
 
 If we search command line in execution : we have interesting return
 ```
-$ volatility -f dump.vmem --profile=Win7SP1x64 netscan
+$ volatility -f dump.vmem --profile=Win7SP1x64 cmdline
 ..............
+Command line : "C:\Users\user\AppData\Local\Drpbx\drpbx.exe" C:\Users\user\Documents\Firefox_installer.exe
 Command line : "C:\Windows\system32\NOTEPAD.EXE" C:\Users\user\Documents\informations_attaque.txt.evil
 .............
 ```
@@ -71,3 +72,29 @@ $ ristretto session_1.WinSta0.Default.png
 ```
 we can see :  
 <img src="https://github.com/PierreAdams/Evil/blob/main/evil2.png" width="600" />
+
+Now it's time to analyse : "drpbx.exe"
+drpbx.exe and firefox.exe are are often source of this ransomware
+```
+$ volatility -f dump.vmem --profile=Win7SP1x64 pslist
+.....................
+0xfffffa8000e91b30 drpbx.exe              2304   2916      8      149      1      0 2020-10-05 11:17:01 UTC+0000                                 
+......................
+$ volatility -f dump.vmem --profile=Win7SP1x64 procdump -p 2304 --dump-dir .
+```
+we can use this website tools : [VirusTotal](https://www.virustotal.com/gui/)   
+
+![](https://github.com/PierreAdams/Evil/blob/main/evil3.png)
+
+we see this programme is very dangerous.   
+like jigsaw our malware is write in .NET   
+
+there are several tools avalaible for decompile .NET program  
+i wil use DotPeek on Windows :   
+![](https://github.com/PierreAdams/Evil/blob/main/evil4.png)
+
+
+
+
+
+
