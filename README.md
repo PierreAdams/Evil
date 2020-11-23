@@ -6,7 +6,7 @@ $ file dump.vmem
 dump.vmem: data
 ```
 
-after somme research vmem extention is a dump's Vmware Workstation   
+after somme research vmem extention is a Vmware dump   
 We can use [Volatility](https://github.com/volatilityfoundation/volatility) tools to extract some information from file    
 
 first : determine profile : 
@@ -86,11 +86,11 @@ we can use this website tools : [VirusTotal](https://www.virustotal.com/gui/)
 
 ![](https://github.com/PierreAdams/Evil/blob/main/evil3.png)
 
-we see this programme is very dangerous.   
-like jigsaw our malware is write in .NET   
+we see this programme is a malicious exec with a 36 score point   
+like jigsaw, Evil is write in .NET   
 
 there are several tools avalaible for decompile .NET program  
-i wil use DotPeek on Windows :     
+i will use DotPeek on Windows :     
 
 ![](https://github.com/PierreAdams/Evil/blob/main/evil4.PNG)     
 Import exec file :     
