@@ -70,4 +70,4 @@ $ volatility -f dump.vmem --profile=Win7SP1x64 screenshot --dump-dir .
 $ ristretto session_1.WinSta0.Default.png 
 ```
 we can see :  
-<img src="https://github.com/PierreAdams/Evil/blob/main/evil2.png" width="500" />
+<img src="https://github.com/PierreAdams/Evil/blob/main/evil2.png" width="600" />
