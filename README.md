@@ -63,9 +63,12 @@ Vous pouvez toujours essayer de payer la rançon, vous ne retrouverez rien
 Envoyez EvilCoins ici:
 
 ![](https://github.com/PierreAdams/Evil/blob/main/evil.png)
+
+if we extract screenshot on dump file
 ```
 $ volatility -f dump.vmem --profile=Win7SP1x64 screenshot --dump-dir .
 $ ristretto session_1.WinSta0.Default.png 
 ```
-
+we can see :  
+![](https://github.com/PierreAdams/Evil/blob/main/evil2.png?v=4&s=200)
 
