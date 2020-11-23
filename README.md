@@ -112,7 +112,7 @@ in this case 2 things interest us :
 
 
 ``` 
-echo "RXZpbERlZmF1bHRQYXNzIQ==" | base64 -d 
+$ echo "RXZpbERlZmF1bHRQYXNzIQ==" | base64 -d 
 EvilDefaultPass!
 ```
 
