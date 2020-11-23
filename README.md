@@ -125,4 +125,4 @@ $ volatility -f dump.vmem --profile=Win7SP1x64 dumpfiles -Q 0x000000001715ed50 -
 for decrypt aes cbc with iv and keypass i use this website tools :  [CyberChef](https://gchq.github.io/CyberChef)     
 ![](https://github.com/PierreAdams/Evil/blob/main/evil9.png)
 
-
+___________________________________________
