@@ -1,5 +1,5 @@
 # Evil Ransomware 
-(Based on DGSE Challenge https://challengecybersec.fr  )
+(Based on Forensic - DGSE Challenge https://challengecybersec.fr  )
 
 ``` 
 $ file dump.vmem  
