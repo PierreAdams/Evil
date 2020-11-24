@@ -6,8 +6,7 @@ $ file dump.vmem
 dump.vmem: data
 ```
 
-after somme research vmem extention is a Vmware dump   
-We can use [Volatility](https://github.com/volatilityfoundation/volatility) tools to extract some information from file    
+vmem extention is a Vmware dump, we can use [Volatility](https://github.com/volatilityfoundation/volatility) tools to extract some information from file    
 
 first : determine profile : 
 ``` 
